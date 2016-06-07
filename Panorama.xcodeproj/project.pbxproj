@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0AC59A21D066FA400625728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AC59A11D066FA400625728 /* AppDelegate.swift */; };
+		F0AC59A41D066FA400625728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AC59A31D066FA400625728 /* ViewController.swift */; };
+		F0AC59A71D066FA400625728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AC59A51D066FA400625728 /* Main.storyboard */; };
+		F0AC59A91D066FA400625728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AC59A81D066FA400625728 /* Assets.xcassets */; };
+		F0AC59AC1D066FA400625728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AC59AA1D066FA400625728 /* LaunchScreen.storyboard */; };
+		F0AC59B71D066FA400625728 /* PanoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AC59B61D066FA400625728 /* PanoramaTests.swift */; };
+		F0AC59C21D066FA400625728 /* PanoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AC59C11D066FA400625728 /* PanoramaUITests.swift */; };
+		F0AC59D01D066FCA00625728 /* PanoramaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AC59CF1D066FCA00625728 /* PanoramaView.swift */; };
+		F0AC59D21D06706000625728 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AC59D11D06706000625728 /* Sphere.swift */; };
+		F0AC59D41D06708000625728 /* pano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0AC59D31D06708000625728 /* pano.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0AC59B31D066FA400625728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0AC59961D066FA400625728 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0AC599D1D066FA400625728;
+			remoteInfo = Panorama;
+		};
+		F0AC59BE1D066FA400625728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0AC59961D066FA400625728 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0AC599D1D066FA400625728;
+			remoteInfo = Panorama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0AC599E1D066FA400625728 /* Panorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AC59A11D066FA400625728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0AC59A31D066FA400625728 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0AC59A61D066FA400625728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0AC59A81D066FA400625728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0AC59AB1D066FA400625728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0AC59AD1D066FA400625728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0AC59B21D066FA400625728 /* PanoramaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoramaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AC59B61D066FA400625728 /* PanoramaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaTests.swift; sourceTree = "<group>"; };
+		F0AC59B81D066FA400625728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0AC59BD1D066FA400625728 /* PanoramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AC59C11D066FA400625728 /* PanoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaUITests.swift; sourceTree = "<group>"; };
+		F0AC59C31D066FA400625728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0AC59CF1D066FCA00625728 /* PanoramaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaView.swift; sourceTree = "<group>"; };
+		F0AC59D11D06706000625728 /* Sphere.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
+		F0AC59D31D06708000625728 /* pano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pano.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0AC599B1D066FA400625728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0AC59AF1D066FA400625728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0AC59BA1D066FA400625728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0AC59951D066FA400625728 = {
+			isa = PBXGroup;
+			children = (
+				F0AC59A01D066FA400625728 /* Panorama */,
+				F0AC59B51D066FA400625728 /* PanoramaTests */,
+				F0AC59C01D066FA400625728 /* PanoramaUITests */,
+				F0AC599F1D066FA400625728 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0AC599F1D066FA400625728 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0AC599E1D066FA400625728 /* Panorama.app */,
+				F0AC59B21D066FA400625728 /* PanoramaTests.xctest */,
+				F0AC59BD1D066FA400625728 /* PanoramaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0AC59A01D066FA400625728 /* Panorama */ = {
+			isa = PBXGroup;
+			children = (
+				F0AC59A11D066FA400625728 /* AppDelegate.swift */,
+				F0AC59A31D066FA400625728 /* ViewController.swift */,
+				F0AC59CF1D066FCA00625728 /* PanoramaView.swift */,
+				F0AC59D11D06706000625728 /* Sphere.swift */,
+				F0AC59A51D066FA400625728 /* Main.storyboard */,
+				F0AC59A81D066FA400625728 /* Assets.xcassets */,
+				F0AC59D31D06708000625728 /* pano.jpg */,
+				F0AC59AA1D066FA400625728 /* LaunchScreen.storyboard */,
+				F0AC59AD1D066FA400625728 /* Info.plist */,
+			);
+			path = Panorama;
+			sourceTree = "<group>";
+		};
+		F0AC59B51D066FA400625728 /* PanoramaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0AC59B61D066FA400625728 /* PanoramaTests.swift */,
+				F0AC59B81D066FA400625728 /* Info.plist */,
+			);
+			path = PanoramaTests;
+			sourceTree = "<group>";
+		};
+		F0AC59C01D066FA400625728 /* PanoramaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F0AC59C11D066FA400625728 /* PanoramaUITests.swift */,
+				F0AC59C31D066FA400625728 /* Info.plist */,
+			);
+			path = PanoramaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0AC599D1D066FA400625728 /* Panorama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0AC59C61D066FA400625728 /* Build configuration list for PBXNativeTarget "Panorama" */;
+			buildPhases = (
+				F0AC599A1D066FA400625728 /* Sources */,
+				F0AC599B1D066FA400625728 /* Frameworks */,
+				F0AC599C1D066FA400625728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Panorama;
+			productName = Panorama;
+			productReference = F0AC599E1D066FA400625728 /* Panorama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0AC59B11D066FA400625728 /* PanoramaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0AC59C91D066FA400625728 /* Build configuration list for PBXNativeTarget "PanoramaTests" */;
+			buildPhases = (
+				F0AC59AE1D066FA400625728 /* Sources */,
+				F0AC59AF1D066FA400625728 /* Frameworks */,
+				F0AC59B01D066FA400625728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0AC59B41D066FA400625728 /* PBXTargetDependency */,
+			);
+			name = PanoramaTests;
+			productName = PanoramaTests;
+			productReference = F0AC59B21D066FA400625728 /* PanoramaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0AC59BC1D066FA400625728 /* PanoramaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0AC59CC1D066FA400625728 /* Build configuration list for PBXNativeTarget "PanoramaUITests" */;
+			buildPhases = (
+				F0AC59B91D066FA400625728 /* Sources */,
+				F0AC59BA1D066FA400625728 /* Frameworks */,
+				F0AC59BB1D066FA400625728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0AC59BF1D066FA400625728 /* PBXTargetDependency */,
+			);
+			name = PanoramaUITests;
+			productName = PanoramaUITests;
+			productReference = F0AC59BD1D066FA400625728 /* PanoramaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0AC59961D066FA400625728 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = SunriseTribe;
+				TargetAttributes = {
+					F0AC599D1D066FA400625728 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = L358622JX6;
+					};
+					F0AC59B11D066FA400625728 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F0AC599D1D066FA400625728;
+					};
+					F0AC59BC1D066FA400625728 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F0AC599D1D066FA400625728;
+					};
+				};
+			};
+			buildConfigurationList = F0AC59991D066FA400625728 /* Build configuration list for PBXProject "Panorama" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0AC59951D066FA400625728;
+			productRefGroup = F0AC599F1D066FA400625728 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0AC599D1D066FA400625728 /* Panorama */,
+				F0AC59B11D066FA400625728 /* PanoramaTests */,
+				F0AC59BC1D066FA400625728 /* PanoramaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0AC599C1D066FA400625728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0AC59AC1D066FA400625728 /* LaunchScreen.storyboard in Resources */,
+				F0AC59D41D06708000625728 /* pano.jpg in Resources */,
+				F0AC59A91D066FA400625728 /* Assets.xcassets in Resources */,
+				F0AC59A71D066FA400625728 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0AC59B01D066FA400625728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0AC59BB1D066FA400625728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0AC599A1D066FA400625728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0AC59D01D066FCA00625728 /* PanoramaView.swift in Sources */,
+				F0AC59A41D066FA400625728 /* ViewController.swift in Sources */,
+				F0AC59D21D06706000625728 /* Sphere.swift in Sources */,
+				F0AC59A21D066FA400625728 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0AC59AE1D066FA400625728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0AC59B71D066FA400625728 /* PanoramaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0AC59B91D066FA400625728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0AC59C21D066FA400625728 /* PanoramaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0AC59B41D066FA400625728 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0AC599D1D066FA400625728 /* Panorama */;
+			targetProxy = F0AC59B31D066FA400625728 /* PBXContainerItemProxy */;
+		};
+		F0AC59BF1D066FA400625728 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0AC599D1D066FA400625728 /* Panorama */;
+			targetProxy = F0AC59BE1D066FA400625728 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0AC59A51D066FA400625728 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0AC59A61D066FA400625728 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0AC59AA1D066FA400625728 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0AC59AB1D066FA400625728 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0AC59C41D066FA400625728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0AC59C51D066FA400625728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0AC59C71D066FA400625728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Panorama/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-SunriseTribe.Panorama";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F0AC59C81D066FA400625728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Panorama/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-SunriseTribe.Panorama";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F0AC59CA1D066FA400625728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PanoramaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-SunriseTribe.PanoramaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panorama.app/Panorama";
+			};
+			name = Debug;
+		};
+		F0AC59CB1D066FA400625728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PanoramaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-SunriseTribe.PanoramaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panorama.app/Panorama";
+			};
+			name = Release;
+		};
+		F0AC59CD1D066FA400625728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PanoramaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-SunriseTribe.PanoramaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Panorama;
+			};
+			name = Debug;
+		};
+		F0AC59CE1D066FA400625728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PanoramaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-SunriseTribe.PanoramaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Panorama;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0AC59991D066FA400625728 /* Build configuration list for PBXProject "Panorama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0AC59C41D066FA400625728 /* Debug */,
+				F0AC59C51D066FA400625728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0AC59C61D066FA400625728 /* Build configuration list for PBXNativeTarget "Panorama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0AC59C71D066FA400625728 /* Debug */,
+				F0AC59C81D066FA400625728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0AC59C91D066FA400625728 /* Build configuration list for PBXNativeTarget "PanoramaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0AC59CA1D066FA400625728 /* Debug */,
+				F0AC59CB1D066FA400625728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0AC59CC1D066FA400625728 /* Build configuration list for PBXNativeTarget "PanoramaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0AC59CD1D066FA400625728 /* Debug */,
+				F0AC59CE1D066FA400625728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0AC59961D066FA400625728 /* Project object */;
+}
